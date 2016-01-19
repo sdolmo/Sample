@@ -21,8 +21,8 @@ gem 'jbuilder', '2.2.3'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-# # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+# Use ActiveModel has_secure_password
+gem 'bcrypt', '3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -31,13 +31,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 # rails tutorial gems to look up functionality
-gem 'faker'
-gem 'carrierwave'
-gem 'mini_magick'
-gem 'fog'
-gem 'will_paginate'
-gem 'bootstrap-will_paginate'
-gem 'bootstrap-sass'
+gem 'faker', '1.4.2'
+gem 'carrierwave', '0.10.0'
+gem 'mini_magick', '3.8.0'
+gem 'fog', '1.36.0'
+gem 'will_paginate', '3.0.7'
+gem 'bootstrap-will_paginate', '0.0.10'
+gem 'bootstrap-sass', '3.2.0.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -57,4 +57,5 @@ end
 group :production do
   gem 'pg', '0.17.1'
   gem 'rails_12factor', '0.0.2'
+  gem 'puma', '2.11.1'
 end
